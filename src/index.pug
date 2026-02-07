@@ -3,9 +3,9 @@ html(lang="en")
  head
   meta(charset="utf-8")
   meta(name="theme-color" content="#ffffff")
-  title The Best Motherfucking Website
+  title My Crochete Website
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  meta(name="description", content="The Best Motherfucking Website")
+  meta(name="description", content="My Crochete Website")
   link(rel="stylesheet" type="text/css" href="./less/main.less")
   link(rel="stylesheet" type="text/css" href="~typeface-open-sans")
 
@@ -16,7 +16,7 @@ html(lang="en")
   link(rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png')
   link(rel='manifest' href='/site.webmanifest')
  body
-  h1 The #[i best] motherfucking website
+  h1 My Crochete Website
   p #[a(href='frog.html') frog]
   p #[a(href='2025-12-frog.html') frog2]
   p.st For real.
@@ -139,41 +139,6 @@ html(lang="en")
     | and it's really worth reading it all.
   a(href="http://www.kopimi.com/kopimi" title="Kopimi" class="kopimi")
     img(src="./img/kopimi.svg" class="kopimi" title="Kopimi Logo")
-    
-  h2 Contributions
-  p.
-    Since this website includes some contributions, and I'm not an asshole, I'll publically thank the following users for their help:
-  ul
-      li.
-        #[a(href="https://github.com/beardog108") @beardog108]
-        and
-        #[a(href="https://github.com/xaban2") @xaban2] for their 
-        #[a(href="https://github.com/denysvitali/thebestmotherfuckingwebsite/issues/5") precious]
-        #[a(href="https://github.com/denysvitali/thebestmotherfuckingwebsite/issues/51") suggestions]
-        related to the server-side part (Cache-Control, HTTP/2, CORS and Piwik)
-      li.
-        #[a(href="https://github.com/5ilver") @5ilver], #[a(href="https://github.com/abluejelly") @abluejelly], #[a(href="https://github.com/bharadwaj-raju") @bharadwaj-raju] for giving tips about #[a(href="https://github.com/denysvitali/thebestmotherfuckingwebsite/issues?q=label%3Acontrast") contrast]
-      li.
-        #[a(href="https://github.com/hellerbarde") @hellerbarde] for his hint about the #[span.visited visited link color] (he proposed #[a(href="http://clrs.cc/") #[span.visited-maroon maroon]]) - if you don't like it, #[a(href="https://github.com/denysvitali/thebestmotherfuckingwebsite/issues/11") complain about it here]
-      li.
-        #[a(href="https://github.com/glodime") @glodime] for his suggestion about #[a(href="https://github.com/denysvitali/thebestmotherfuckingwebsite/issues/12") text justification on mobile]
-      li.
-        #[a(href="https://github.com/arthurtiteica") @arthurtiteica] and #[a(href="https://github.com/vktec") @vktec] for their suggestions about #[a(href="https://github.com/denysvitali/thebestmotherfuckingwebsite/issues/9") PIN Code] / #[a(href="https://en.wikipedia.org/wiki/RAS_syndrome") RAS Syndrome] fix.
-      li.
-        #[a(href="https://github.com/friendlyanon") @friendlyanon] and #[a(href="https://github.com/C-Lodder") @C-Lodder] for improving the JS.
-      li.
-        #[a(href="https://github.com/Kadigan") @Kadigan] for #[a(href="https://github.com/denysvitali/thebestmotherfuckingwebsite/issues/90") pointing out] that one of these list items was empty (now filled with their name)
-      li
-        -var spellcheckers = ["Zsavajji", "CapacitorSet", "danielquinn", "ehea617", "MrSaad", "tqdv", "mothinx"];
-        each username in spellcheckers
-          -var url = `https://github.com/${username}`
-          - if(spellcheckers.indexOf(username) != 0)
-            span.separator , 
-          span #[a(href=url) @#{username}]
-        span  for #[a(href="https://github.com/denysvitali/thebestmotherfuckingwebsite/pulls?q=is%3Apr+is%3Aclosed+label%3A%22spell+checking%22") their help in spell checking]
-
-  input#contrast(type="checkbox")
-  input#invmode(type="checkbox")
 
   label.cont-inv(for="contrast", tabindex="1") Add more contrast
   label.cont-inv(for="invmode", tabindex="2") Inverted mode
