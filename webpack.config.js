@@ -76,7 +76,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             esModule: false,
-            publicPath: '/',
+            publicPath: './',
           }
         },
           'extract-loader',
@@ -95,7 +95,7 @@ module.exports = {
           options: {
             name: 'main.css',
             esModule: false,
-            publicPath: '/',
+            publicPath: './',
           }
         },
           'extract-loader',
@@ -124,15 +124,15 @@ module.exports = {
                 console.log(res);
                 return res;
               },
-              //name: '[name].html',
-              publicPath: '/'
+              publicPath: './'
             }
           },
           'extract-loader',
           {
             loader: "html-loader",
             options: {
-              attrs: ["img:src", "link:href"]
+              attrs: ["img:src", "link:href"],
+              publicPath: './'
             }
           },
           'pug-html-loader'
@@ -140,14 +140,16 @@ module.exports = {
       },
       {
         test: /\.(svg|jpe?g|woff(2)?|ttf|eot)/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: 'static/[hash].[ext]',
-            esModule: false,
-            publicPath: '/'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'static/[hash].[ext]',
+              esModule: false,
+              publicPath: './'
+            }
           }
-        }]
+        ]
       }
     ]
   },
