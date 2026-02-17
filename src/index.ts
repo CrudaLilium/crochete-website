@@ -1,2 +1,2 @@
-import './js/main.fucking.js';
+import './js/utils.js';
 import './index.pug';
