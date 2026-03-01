@@ -1,0 +1,1 @@
+import './index.pug?articleName=2026-01-dog';
