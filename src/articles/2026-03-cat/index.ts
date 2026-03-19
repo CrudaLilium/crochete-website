@@ -1,0 +1,1 @@
+import './index.pug?articleName=2026-03-cat';

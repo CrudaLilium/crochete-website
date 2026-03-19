@@ -139,7 +139,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(svg|jpe?g|woff(2)?|ttf|eot)/,
+        test: /\.(svg|jpe?g|woff(2)?|ttf|eot|png)/,
         use: [
           {
             loader: 'file-loader',
